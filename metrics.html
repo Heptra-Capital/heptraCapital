@@ -26,7 +26,7 @@
 
     <!-- Font Icons -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- Popup Images -->
     <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
 
@@ -116,7 +116,7 @@
             <div class="container wow fadeInUp">
                 <div class="row">
                     <div class="col-sm-5 col-md-6">
-                        <h1>Who Are We</h1>
+                        <h1>How we use Metrics?</h1>
                     </div>
                     <div class="col-sm-7 col-md-6">
                         <p>We are a digital design company based in Bangladesh, consectetur adipisicing elit, sed do eiusmod
@@ -134,62 +134,57 @@
         <!-- most probably like canvas -->
         <section id="services" class="services page">
             <div class="container wow fadeInUp">
-                <div class="row">
+                
                     <div class="col-md-12 main-heading">
-                      <h1>Our Services</h1>
+                      <h1>Assets Under Management </h1>
                     </div>
-                    <div class="col-md-12">
-                        <div class="row">
-                            <div class="service clearfix">
-                                <div class="col-sm-4 col-md-5">
-                                    <span class="service-number">1</span>
-                                </div>
-                                <div class="col-sm-8 col-md-7">
-                                    <h2>We craft engaging applications</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
+                            
+                                <div class="col-sm-8 col-md-7"></div>
+                                    
+                                    <p>Assets Under Management is defined total market value of investments for each investor.</p>
 
-                    <div class="col-md-12">
-                        <div class="row">
-                            <div class="service clearfix">
-                                <div class="col-sm-4 col-md-5">
-                                    <span class="service-number">2</span>
-                                </div>
-                                <div class="col-sm-8 col-md-7">
-                                    <h2>PSD <span class="thin">2</span> HTML conversion</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-md-12">
-                        <div class="row">
-                            <div class="service clearfix">
-                                <div class="col-sm-4 col-md-5">
-                                    <span class="service-number">3</span>
-                                </div>
-                                <div class="col-sm-8 col-md-7">
-                                    <h2>Wordpress theme <span class="thin">&amp;</span> plugin development</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                                <canvas id="myChart" width="400" height="400"></canvas>
+<script>
+var ctx = document.getElementById('myChart');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+</script>
+ 
 
-                </div>
             </div>
         </section>
 
@@ -213,36 +208,8 @@
             <div class="container">
                 <div class="row">
                     <div class="footer-wrapper clearfix page wow fadeInUp">
-                    <div class="col-md-6 footer-left">
-                        <div class="row">
-                            <div class="col-xs-6">
-                                <div class="footer-link footer-link-1">
-                                    <h4>Create Free Account</h4>
-                                    <ul>
-                                        <li><a href="#">View courses</a></li>
-                                        <li><a href="#">Discuss</a></li>
-                                        <li><a href="#">Suggest course</a></li>
-                                        <li><a href="#">View courses</a></li>
-                                        <li><a href="#">Discuss</a></li>
-                                        <li><a href="#">Suggest course</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-xs-6">
-                                <div class="footer-link footer-link-2">
-                                    <h4>Create Free Account</h4>
-                                    <ul>
-                                        <li><a href="#">View courses</a></li>
-                                        <li><a href="#">Discuss</a></li>
-                                        <li><a href="#">Suggest course</a></li>
-                                        <li><a href="#">View courses</a></li>
-                                        <li><a href="#">Discuss</a></li>
-                                        <li><a href="#">Suggest course</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
+                     
                     <div class="col-md-5 col-md-offset-1 footer-text">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
                         <span>&copy; 2016 G&amp;G. Theme By <a href="https://themewagon.com/" target="_blank">ThemeWagon</a></span>
